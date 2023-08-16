@@ -1,0 +1,241 @@
+/* #D5DCF9 (light purple) */
+
+*{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+body{
+    background-color: #06D6A0;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.searchbar{
+    background-color: white;
+    width: 330px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 5px 20px grey;
+}
+
+.searchbar input{
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-radius: 25px;
+}
+
+.searchbar input:focus{
+    outline: none;
+}
+
+.search-icon{
+    background-color: #c8efff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.weather-contianer{
+    width: 380px;
+    height: 295px;
+    background-color: #FEFAE0;
+    margin-top: 70px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 20px gray;
+}
+
+.country-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #bcb8ff;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 20px grey;
+}
+
+.country-details{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.country-details .city{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.country-details .country{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: white
+}
+
+.time{
+    display: flex;
+    align-items: center;
+}
+
+.time p{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 26px;
+}
+
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.temperature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 100, 255);
+    width: 85px;
+    height: 85px;
+    border-radius: 25px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0px 5px 20px grey;
+}
+
+.temperature p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300; 
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    padding-right: 7px;
+}
+
+.temperature .degree-icon{
+    height: 10px;
+    width: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.temperature i{
+    color: white;
+}
+
+.humidity{
+    background-color: #FF783D;
+    width: 85px;
+    height: 85px;
+    border-radius: 25px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0px 5px 20px grey;
+}
+
+.humidity-icon{
+    height: 24px;
+    width: 67px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.humidity i{
+    color: white;
+}
+
+.humidity .humidity-measure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.humidity-measure .humidity-number{
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    width: 42px;
+    justify-content: flex-start;
+}
+
+.symbol-1{
+    margin: 0;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 9px;
+}
+
+.wind-speed{
+    background-color: #FF2B2B;
+    width: 85px;
+    height: 85px;
+    border-radius: 25px;
+    padding: 5px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0px 5px 20px grey;
+} 
+
+.wind-speed i{
+    color: white;
+}
+
+.wind-speed .wind-icon{
+    width: 65px;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.wind-measure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wind-measure .wind-number{
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.symbol-2{
+    margin: 0;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 2px;
+}

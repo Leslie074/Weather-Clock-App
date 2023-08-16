@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling/styles.css">
+    <script src="https://kit.fontawesome.com/3e854bfc81.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form class="searchbar" action="/submit" method="post">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter your location" name="location" autocomplete="off" required>
+        <button class="search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+
+    <% if (locals.temperature && locals.humidity && locals.wind_speed && locals.city && locals.country && locals.time) { %>
+       
+        <div class="weather-contianer">
+
+            <div class="country-container">
+
+                <div class="country-details">
+                    <p class="city"><%= city %></p>
+                    <p class="country"><%= country %></p>
+                </div>
+
+                <div class="time">
+                    <p><%= time %></p>
+                </div>
+
+            </div>
+
+            <div class="weather-details">
+
+                <div class="temperature">
+                    <div class="degree-icon"><i class="fa-regular fa-circle fa-2xs"></i></div>
+                    <p><%= temperature %></p>
+                </div>
+
+                <div class="humidity">
+
+                    <div class="humidity-icon"><i class="fa-solid fa-droplet fa-2xs"></i></div>
+                    
+                    <div class="humidity-measure">
+                        <p class="humidity-number"><%= humidity %></p>
+                        <p class="symbol-1">%</p>
+                    </div>
+                
+                </div>
+
+                <div class="wind-speed">
+                    
+                    <div class="wind-icon"><i class="fa-solid fa-wind fa-2xs"></i></div>
+                    
+                    <div class="wind-measure">
+                        <p class="wind-number"><%= wind_speed %></p>
+                        <p class="symbol-2"> ms</p>
+                    </div>
+
+            </div>
+
+        </div>
+
+    <% } %>
+
+</body>
+</html>
